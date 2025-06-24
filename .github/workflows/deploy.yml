@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger the action on push to the main branch (or master)
-      
+      - main  # Trigger the action on push to the main branch
+
 jobs:
   build:
     runs-on: ubuntu-latest  # The job will run on the latest Ubuntu environment
@@ -13,26 +13,40 @@ jobs:
       # Check out the repository
       - name: Checkout code
         uses: actions/checkout@v2
+
+      # Set up Git user configuration
+      - name: Set up Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
       # Set up Node.js (you can customize this version to match your project's requirements)
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 'v22.16.0'  # Specify the Node.js version you are using
+          node-version: '14'  # Specify the Node.js version you are using
 
       # Install dependencies
       - name: Install dependencies
         run: npm install
       
-      # Build the project
+      # Build the project using Vite
       - name: Build the project
-        run: npm run build  # Assuming your build command is 'npm run build'
+        run: npm run build  # Vite will generate the dist folder here
+
+      # Ensure the gh-pages branch exists and is clean
+      - name: Ensure gh-pages branch exists
+        run: |
+          git fetch --all
+          git checkout gh-pages || git checkout --orphan gh-pages  # Switch to gh-pages or create it if it doesn't exist
+          git reset --hard
+          git clean -fdx  # Clean any unnecessary files
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch to deploy to
-          folder: dist      # Folder where your built files (e.g., index.html, CSS, JS) are located
+          folder: dist      # Folder where the built files are located
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # This token is automatically provided by GitHub
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub’s built-in token for authentication
