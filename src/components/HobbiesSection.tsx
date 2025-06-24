@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const HobbiesSection = () => {
   const hobbies = [
     { name: "Fitness Training", icon: "💪", description: "Staying fit and healthy" },
-    { name: "Badminton", icon: "🏸", description: "Competitive sport enthusiast" },
+    { name: "Badminton", icon: "🏸", description: "Loves the thrill of the game" },
     { name: "Cooking", icon: "👨‍🍳", description: "Exploring new cuisines" },
     { name: "Podcasts & Movies", icon: "🎧", description: "Learning and entertainment" },
     { name: "Biking", icon: "🏍️", description: "Adventure and exploration" }

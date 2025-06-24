@@ -8,7 +8,7 @@ const AboutSection = () => {
 
   const experiences = [
     {
-      icon: "🚗", // Placeholder for Namma Yatri logo
+      icon: "/Nammayatri.jpg",
       headline: "Product Manager at Namma Yatri",
       subheadline: "Oct 2022 – Present",
       description: [
@@ -19,7 +19,7 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: "📱", // Placeholder for Media.net logo
+      icon: "/Medianet.png",
       headline: "Associate Product Manager at Media.net", 
       subheadline: "May 2020 – Dec 2020",
       description: [
@@ -29,7 +29,7 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: "🎓", // Placeholder for IIM Ahmedabad logo
+      icon: "/IIMAhmedabad.png",
       headline: "MBA from IIM Ahmedabad",
       subheadline: "July 2018 – May 2020", 
       description: [
@@ -39,7 +39,7 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: "💻", // Placeholder for IIT Bombay logo
+      icon: "/IITBombay.png",
       headline: "B.Tech in CSE from IIT Bombay",
       subheadline: "July 2014 – May 2018",
       description: [
@@ -67,7 +67,7 @@ const AboutSection = () => {
             >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
-                  <div className="text-3xl">{exp.icon}</div>
+                  <img src={exp.icon} alt={exp.headline} className="w-12 h-12 rounded-full object-cover" />
                   <div className="flex-1">
                     <div className="flex justify-between items-start">
                       <div>

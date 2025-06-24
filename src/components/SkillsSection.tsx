@@ -8,17 +8,20 @@ const SkillsSection = () => {
     "Cross-functional Leadership", 
     "Data-Driven Product Development",
     "Stakeholder Management",
+    "GTM Planning",
     "UX Design",
     "A/B Testing",
-    "User Research"
+    "User Research (Interviews, Surveys, FGDs)"
   ];
 
   const technicalSkills = [
     "AI Agents (for prototyping)",
-    "Figma",
+    "Figma (for UI/UX)",
     "Data Analytics (Python, SQL, Excel)",
+    "Git",
     "Conversion Optimisation", 
-    "Cohort & Retention Analysis"
+    "Cohort & Retention Analysis",
+    "Rapid Prototyping"
   ];
 
   return (

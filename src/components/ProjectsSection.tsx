@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Driver Subscriptions & Platform Fee Automation",
-      icon: "🚗",
+      icon: "/Nammayatri.jpg",
       description: [
         "Built 0→1 revenue platform across 9 cities, achieving breakeven in 18 months",
         "Designed UPI Autopay flow; boosted success rate from 86% to 92%", 
@@ -16,7 +16,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Multimodal Transportation Integration", 
-      icon: "🚊",
+      icon: "/Multimodal.png",
       description: [
         "Pioneered unified QR ticketing and one-click UPI payments for multimodal journey",
         "Architected extensible backend and modular UI for scaling to 45L+ commuters",
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Open Data Platform & Data Function",
-      icon: "📊", 
+      icon: "/OpenData.png",
       description: [
         "Launched India's first mobility Open Data Dashboard end-to-end",
         "Led 14-member data team; drove 8x conversion, 2L+ rides/day, 70% driver retention"
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Core Feature Rollouts: Driver & Rider",
-      icon: "🚗",
+      icon: "/Nammayatri.jpg",
       description: [
         "Built Matching Engine (+30% acceptance); Launched Yatri Points (+25% ARPDAU)",
         "Launched core rider flows—Repeat Ride, Pickup Hotspots, Reallocation (5K → 350K DAU)"
@@ -44,18 +44,18 @@ const ProjectsSection = () => {
     },
     {
       title: "Programmatic Demand & Ad Exchange",
-      icon: "📱",
+      icon: "/Medianet.png",
       description: [
         "Integrated TTD, Amazon, Baidu; scaled DSP spend from 0 to $50K+/day",
         "Improved cookie match by 10% across 30+ DSPs via publisher analytics", 
         "Refined bidding via A/B testing—7% win rate boost, 15% CPM drop",
-        "Designed Contextual DMP for high-relevance inventory, improving Ad ROI"
+        // "Designed Contextual DMP for high-relevance inventory, improving Ad ROI"
       ],
       skills: ["Product Leadership", "AdTech", "DSP Integrations", "A/B Testing", "Targeting Strategy"]
     },
     {
       title: "UV Monitoring on Samsung Watch",
-      icon: "⌚",
+      icon: "/samsung.jpeg",
       description: [
         "Developed UV exposure monitoring with proactive alerts; delivered end-to-end",
         "Secured PPO for productised concept, feature design, and delivery"
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Resilient Load Balancer Deployment", 
-      icon: "🔧",
+      icon: "/Jio.png",
       description: [
         "Designed zero-downtime HAProxy deployment using TCP SYN and firewall rules",
         "Achieved >95% reliability handling IAM traffic in high-availability systems"
@@ -83,7 +83,7 @@ const ProjectsSection = () => {
             <Card key={index} className="hover:shadow-lg transition-all duration-300 hover-scale">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-3 mb-4">
-                  <div className="text-2xl">{project.icon}</div>
+                  <img src={project.icon} alt={project.title} className="w-8 h-8 rounded-full object-cover" />
                   <h3 className="text-lg font-semibold leading-tight">{project.title}</h3>
                 </div>
                 

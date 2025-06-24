@@ -64,7 +64,7 @@ const HeroSection = () => {
               </h1>
               
               <div className="mt-6 h-16 flex items-center">
-                <p className="text-lg sm:text-xl text-muted-foreground font-medium animate-fade-in">
+                <p className="text-lg sm:text-xl text-muted-foreground font-medium animate-ease-in-out">
                   <strong className="text-foreground">{subheadlines[currentSubheadline]}</strong>
                 </p>
               </div>
@@ -77,9 +77,11 @@ const HeroSection = () => {
               <Button onClick={scrollToStories} variant="outline" size="lg" className="hover-scale border-primary/50 hover:border-primary hover:bg-primary/10">
                 Read My Product Ideas
               </Button>
-              <Button variant="outline" size="lg" className="hover-scale border-secondary/50 hover:border-secondary hover:bg-secondary/10">
-                <FileText className="mr-2 h-4 w-4" />
-                Preview CV
+              <Button variant="outline" size="lg" className="hover-scale border-secondary/50 hover:border-secondary hover:bg-secondary/10" asChild>
+                <a href="/Srinivas_updatedCV_2025.pdf" target="_blank" rel="noopener noreferrer">
+                  <FileText className="mr-2 h-4 w-4" />
+                  Preview CV
+                </a>
               </Button>
             </div>
 
@@ -93,7 +95,6 @@ const HeroSection = () => {
                 className="flex items-center gap-2 px-4 py-2 rounded-lg ai-card hover:neon-glow transition-all duration-300 hover-scale"
               >
                 <Linkedin className="h-5 w-5 text-blue-400" />
-                <span className="text-sm font-medium">LinkedIn</span>
               </a>
               <a
                 href="https://github.com/BSrinivasNaik"
@@ -102,7 +103,6 @@ const HeroSection = () => {
                 className="flex items-center gap-2 px-4 py-2 rounded-lg ai-card hover:neon-glow transition-all duration-300 hover-scale"
               >
                 <Github className="h-5 w-5 text-foreground" />
-                <span className="text-sm font-medium">GitHub</span>
               </a>
             </div>
           </div>
@@ -111,9 +111,11 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 rounded-full ai-gradient flex items-center justify-center backdrop-blur-sm border-2 border-primary/30 neon-glow floating">
-                <div className="w-72 h-72 rounded-full ai-card flex items-center justify-center text-6xl font-bold text-primary backdrop-blur-sm">
-                  SN
-                </div>
+                <img
+                  src="/SrinivasNaikBhukya.jpeg"
+                  alt="Srinivas Naik Bhukya"
+                  className="w-72 h-72 rounded-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white shadow-lg neon-glow pulse-glow">
                 <span className="text-2xl">👋</span>
@@ -126,10 +128,10 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="animate-bounce">
+        <div className="absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2">
+          <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="animate-bounce">
             <ArrowDown className="h-6 w-6 text-primary animate-pulse" />
-          </div>
+          </button>
         </div>
       </div>
     </section>
