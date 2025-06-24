@@ -6,6 +6,12 @@ Updating the Memory Bank with the latest changes.
 
 ## Recent Changes
 
+*   Updated the `README.md` file to include information about the domain, hosting, and deployment.
+*   Updated the `README.md` file to include a note to refer to the PDF for the full documentation of the website.
+*   Updated the `README.md` file to include information that the website was built using Lovable, Cursor (with Cline), and that all details are present in the Memory Bank.
+*   De-emphasized Lovable in the `README.md` file.
+*   Updated the `projectbrief.md` file to include a note to refer to the PDF for the full documentation of the website.
+*   Updated the `productContext.md` file to include a note to refer to the PDF for the full documentation of the website.
 *   Updated the `src/pages/Index.tsx` file to set the initial state of `darkMode` to `true`.
 *   Updated the `HeroSection` component to make the arrow button clickable and take the user to the "About Me" section.
 *   Updated the `HeroSection` component to move the arrow button further down.

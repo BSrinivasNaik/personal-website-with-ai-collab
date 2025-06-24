@@ -1,5 +1,8 @@
 # Project Brief
 
+> [!NOTE]
+> For the full documentation of the website, please refer to the `Srinivas Personal Website-PRD.pdf` file.
+
 ## Core Requirements
 
 The website should be a compact and mobile-friendly professional portfolio with a modern and minimalistic design. It should be SEO-optimised and serve as a one-stop guide for recruiters and potential co-founders.

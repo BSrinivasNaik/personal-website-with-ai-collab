@@ -1,5 +1,8 @@
 # Product Context
 
+> [!NOTE]
+> For the full documentation of the website, please refer to the `Srinivas Personal Website-PRD.pdf` file.
+
 ## Why This Project Exists
 
 This project exists to create a professional portfolio and thought leadership display for Srinivas Naik Bhukya, a Product Manager.
