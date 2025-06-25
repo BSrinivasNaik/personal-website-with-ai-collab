@@ -34,16 +34,6 @@ jobs:
       - name: Build the project
         run: npm run build  # Vite will generate the dist folder here
 
-      - name: List dist folder contents
-        run: ls -R dist
-
-      # Ensure the gh-pages branch exists and is clean
-      - name: Ensure gh-pages branch exists
-        run: |
-          git fetch --all
-          git checkout gh-pages || git checkout --orphan gh-pages  # Switch to gh-pages or create it if it doesn't exist
-          git reset --hard
-
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
