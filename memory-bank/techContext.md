@@ -5,12 +5,14 @@
 *   React
 *   Tailwind CSS
 *   MDX
+*   Vite (as build tool)
+*   `gh-pages` npm package (for deployment)
 
 ## Development Setup
 
 *   VS Code
 *   Node.js
-*   npm or yarn
+*   npm
 
 ## Technical Constraints
 

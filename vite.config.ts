@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({ // This line is important for GitHu
     host: "::",
     port: 8080,
   },
-  base: '/personal-website-with-ai-collab/',
+  base: '/',
   plugins: [
     react(),
     mode === 'development' &&

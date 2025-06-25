@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-The website will be a single-page application with vertical-scrollable sections. Each section will be a React component.
+The website is a single-page application with vertical-scrollable sections, with each section implemented as a React component. It is now successfully deployed and accessible via a custom domain.
 
 ## Key Technical Decisions
 

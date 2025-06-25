@@ -6,17 +6,17 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Driver Subscriptions & Platform Fee Automation",
-      icon: "/Nammayatri.jpg",
+      icon: `${import.meta.env.BASE_URL}Nammayatri.jpg`,
       description: [
         "Built 0→1 revenue platform across 9 cities, achieving breakeven in 18 months",
-        "Designed UPI Autopay flow; boosted success rate from 86% to 92%", 
+        "Designed UPI Autopay flow; boosted success rate from 86% to 92%",
         "Managed full product lifecycle; scaled to 4.5L drivers with 22.7% avg. MRR growth"
       ],
       skills: ["Product Leadership and Strategy", "Stakeholder Management", "Payment UX", "Revenue Analytics"]
     },
     {
-      title: "Multimodal Transportation Integration", 
-      icon: "/Multimodal.png",
+      title: "Multimodal Transportation Integration",
+      icon: `${import.meta.env.BASE_URL}Multimodal.png`,
       description: [
         "Pioneered unified QR ticketing and one-click UPI payments for multimodal journey",
         "Architected extensible backend and modular UI for scaling to 45L+ commuters",
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Open Data Platform & Data Function",
-      icon: "/OpenData.png",
+      icon: `${import.meta.env.BASE_URL}OpenData.png`,
       description: [
         "Launched India's first mobility Open Data Dashboard end-to-end",
         "Led 14-member data team; drove 8x conversion, 2L+ rides/day, 70% driver retention"
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Core Feature Rollouts: Driver & Rider",
-      icon: "/Nammayatri.jpg",
+      icon: `${import.meta.env.BASE_URL}Nammayatri.jpg`,
       description: [
         "Built Matching Engine (+30% acceptance); Launched Yatri Points (+25% ARPDAU)",
         "Launched core rider flows—Repeat Ride, Pickup Hotspots, Reallocation (5K → 350K DAU)"
@@ -44,10 +44,10 @@ const ProjectsSection = () => {
     },
     {
       title: "Programmatic Demand & Ad Exchange",
-      icon: "/Medianet.png",
+      icon: `${import.meta.env.BASE_URL}Medianet.png`,
       description: [
         "Integrated TTD, Amazon, Baidu; scaled DSP spend from 0 to $50K+/day",
-        "Improved cookie match by 10% across 30+ DSPs via publisher analytics", 
+        "Improved cookie match by 10% across 30+ DSPs via publisher analytics",
         "Refined bidding via A/B testing—7% win rate boost, 15% CPM drop",
         // "Designed Contextual DMP for high-relevance inventory, improving Ad ROI"
       ],
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
     },
     {
       title: "UV Monitoring on Samsung Watch",
-      icon: "/samsung.jpeg",
+      icon: `${import.meta.env.BASE_URL}samsung.jpeg`,
       description: [
         "Developed UV exposure monitoring with proactive alerts; delivered end-to-end",
         "Secured PPO for productised concept, feature design, and delivery"
@@ -63,8 +63,8 @@ const ProjectsSection = () => {
       skills: ["Embedded Systems", "Wearables UX", "HealthTech", "Alerting Systems"]
     },
     {
-      title: "Resilient Load Balancer Deployment", 
-      icon: "/Jio.png",
+      title: "Resilient Load Balancer Deployment",
+      icon: `${import.meta.env.BASE_URL}Jio.png`,
       description: [
         "Designed zero-downtime HAProxy deployment using TCP SYN and firewall rules",
         "Achieved >95% reliability handling IAM traffic in high-availability systems"

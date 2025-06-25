@@ -6,29 +6,16 @@ Updating the Memory Bank with the latest changes.
 
 ## Recent Changes
 
-*   Updated the `README.md` file to include information about the domain, hosting, and deployment.
-*   Updated the `README.md` file to include a note to refer to the PDF for the full documentation of the website.
-*   Updated the `README.md` file to include information that the website was built using Lovable, Cursor (with Cline), and that all details are present in the Memory Bank.
-*   De-emphasized Lovable in the `README.md` file.
-*   Updated the `projectbrief.md` file to include a note to refer to the PDF for the full documentation of the website.
-*   Updated the `productContext.md` file to include a note to refer to the PDF for the full documentation of the website.
-*   Updated the `src/pages/Index.tsx` file to set the initial state of `darkMode` to `true`.
-*   Updated the `HeroSection` component to make the arrow button clickable and take the user to the "About Me" section.
-*   Updated the `HeroSection` component to move the arrow button further down.
-*   Updated the `src/index.css` file to change the text color for the light theme.
-*   Updated the `src/pages/Index.tsx` file to include the logic for toggling the light and dark themes.
-*   Updated the `ProjectsSection` component to only show the project headings initially.
-*   Reverted the changes to the `ProjectsSection.tsx` file.
-*   Updated the `HeroSection` component to use an ease-in-out animation for the subheadlines.
-*   Reverted the changes to the `HeroSection.tsx` file and the subheadline animation is back to the previous one.
-*   Updated the `HeroSection` component to remove the text from the LinkedIn and GitHub links.
-*   Updated the `HeroSection` component to link the "Preview CV" button to the `Srinivas_updatedCV_2025.pdf` file in the `public` folder.
-*   Updated the `HeroSection` component to include the user's picture.
-*   Updated the `AboutSection` component to include the IIM Ahmedabad, IIT Bombay, Namma Yatri, and Media.net logos.
-*   Updated the `ProjectsSection` component to include the Namma Yatri, Media.net, Samsung, and Jio logos.
-*   Updated the `ProjectsSection` component to use the `Multimodal.png` logo for the "Multimodal Transportation Integration" project.
-*   Updated the name on the top line to 'Srinivas Naik Bhukya'.
-*   Updated the `ProjectsSection` component to use the `OpenData.png` logo for the "Open Data Platform & Data Function" project.
+*   **Deployment Process Refinement**: Transitioned from GitHub Actions for deployment to using the `gh-pages` npm package. This involved:
+    *   Adding `predeploy` and `deploy` scripts to `package.json`.
+    *   Configuring `vite.config.ts` and `src/App.tsx` to dynamically use `import.meta.env.BASE_URL` for asset and routing paths, ensuring compatibility with both local development (root path) and GitHub Pages (sub-path or custom domain).
+    *   Creating a `public/404.html` for Single Page Application (SPA) routing fallback on GitHub Pages.
+    *   Adding a `public/CNAME` file for custom domain configuration.
+    *   Multiple iterations to resolve pathing issues (e.g., missing trailing slashes, incorrect base URLs) and `gh-pages` package errors (e.g., "couldn't find remote ref", "nothing to commit").
+*   **Asset Path Corrections**: Updated image and PDF references across `src/components/HeroSection.tsx`, `src/components/ProjectsSection.tsx`, and `src/components/AboutSection.tsx` to use `import.meta.env.BASE_URL` for correct resolution in deployed environments.
+*   **Favicon Implementation**: Added a `link` tag for the favicon in `index.html` using a relative path to ensure it loads correctly on GitHub Pages.
+*   **UI Adjustment**: Adjusted the scroll indicator arrow position in `src/components/HeroSection.tsx`.
+*   Updated the `README.md` file to include comprehensive deployment instructions for both local and GitHub Pages, detailing the use of the `gh-pages` npm package and custom domain setup.
 
 ## Next Steps
 
@@ -53,3 +40,7 @@ Updating the Memory Bank with the latest changes.
 *   The importance of using a local copy of the `pdf.worker.min.js` file to avoid CORS issues.
 *   The importance of using a different approach when the `browser_action` tool is not working.
 *   The importance of using a different approach when the `context7-mcp` server is not working.
+*   **Complexities of SPA Deployment**: Learned the intricacies of deploying Single Page Applications (SPAs) to GitHub Pages, especially regarding base URL configuration in `vite.config.ts`, router `basename` in `react-router-dom`, and asset pathing (images, PDFs, favicons) using `import.meta.env.BASE_URL`.
+*   **GitHub Pages Custom Domains**: Understood the redirection behavior and DNS configuration (CNAME and A records) required for custom domains with GitHub Pages.
+*   **`gh-pages` vs. GitHub Actions**: Gained insight into the trade-offs and specific configurations needed for both `gh-pages` npm package and GitHub Actions for deployment, ultimately settling on `gh-pages` for its direct control over the deployment branch.
+*   **Debugging Deployment Issues**: Emphasized the iterative process of debugging deployment failures, including checking build outputs, network requests, and error logs to pinpoint root causes (e.g., 404s, "nothing to commit").

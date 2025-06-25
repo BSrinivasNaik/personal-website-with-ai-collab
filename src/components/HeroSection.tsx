@@ -78,7 +78,7 @@ const HeroSection = () => {
                 Read My Product Ideas
               </Button>
               <Button variant="outline" size="lg" className="hover-scale border-secondary/50 hover:border-secondary hover:bg-secondary/10" asChild>
-                <a href="/Srinivas_updatedCV_2025.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={`${import.meta.env.BASE_URL}Srinivas_updatedCV_2025.pdf`} target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-4 w-4" />
                   Preview CV
                 </a>
@@ -112,7 +112,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full ai-gradient flex items-center justify-center backdrop-blur-sm border-2 border-primary/30 neon-glow floating">
                 <img
-                  src="/SrinivasNaikBhukya.jpeg"
+                  src={`${import.meta.env.BASE_URL}SrinivasNaikBhukya.jpeg`}
                   alt="Srinivas Naik Bhukya"
                   className="w-72 h-72 rounded-full object-cover"
                 />

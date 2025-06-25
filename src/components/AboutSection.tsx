@@ -8,19 +8,19 @@ const AboutSection = () => {
 
   const experiences = [
     {
-      icon: "/Nammayatri.jpg",
+      icon: `${import.meta.env.BASE_URL}Nammayatri.jpg`,
       headline: "Product Manager at Namma Yatri",
       subheadline: "Oct 2022 – Present",
       description: [
         "Launched monetisation playbook; scaled to 4.5L drivers, 22.7% avg. MRR growth",
-        "Led multimodal stack; enabling single unified QR ticketing for 45L+ users", 
+        "Led multimodal stack; enabling single unified QR ticketing for 45L+ users",
         "Headed data team and Open Data Project; drove 8× conversion, 2L+ daily rides",
         "Engineered and launched core driver & rider features—boosting driver acceptance by 30% and rider DAU from 5K to 350K."
       ]
     },
     {
-      icon: "/Medianet.png",
-      headline: "Associate Product Manager at Media.net", 
+      icon: `${import.meta.env.BASE_URL}Medianet.png`,
+      headline: "Associate Product Manager at Media.net",
       subheadline: "May 2020 – Dec 2020",
       description: [
         "Led DSP integrations; scaled advertiser spend to $50K+ daily",
@@ -29,9 +29,9 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: "/IIMAhmedabad.png",
+      icon: `${import.meta.env.BASE_URL}IIMAhmedabad.png`,
       headline: "MBA from IIM Ahmedabad",
-      subheadline: "July 2018 – May 2020", 
+      subheadline: "July 2018 – May 2020",
       description: [
         "GPA: 3.29/4.33 with 'A' grade in 17 courses",
         "Won multiple competitions in Product Management and Marketing",
@@ -39,11 +39,11 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: "/IITBombay.png",
+      icon: `${import.meta.env.BASE_URL}IITBombay.png`,
       headline: "B.Tech in CSE from IIT Bombay",
       subheadline: "July 2014 – May 2018",
       description: [
-        "Graduated with 8.31 CGPA; scored 10/9 in 27 core technical courses", 
+        "Graduated with 8.31 CGPA; scored 10/9 in 27 core technical courses",
         "Worked on multiple key projects across Networks, Image Processing and College Utility applications"
       ]
     }

@@ -9,7 +9,7 @@ This project exists to create a professional portfolio and thought leadership di
 
 ## Problems It Solves
 
-It solves the problem of providing a one-stop guide for recruiters and potential co-founders to learn about Srinivas's career summary and product portfolio. It also provides a platform for Srinivas to share his product thoughts.
+It solves the problem of providing a one-stop guide for recruiters and potential co-founders to learn about Srinivas's career summary and product portfolio. It also provides a platform for Srinivas to share his product thoughts. The website is now fully deployed and accessible via a custom domain, ensuring a reliable and professional online presence.
 
 ## How It Should Work
 
