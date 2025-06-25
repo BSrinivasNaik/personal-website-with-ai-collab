@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the current path
+      var path = window.location.pathname;
+      // Get the base path from vite.config.ts (assuming it's /personal-website-with-ai-collab/)
+      var basePath = '/personal-website-with-ai-collab/';
+      // Construct the new URL
+      var newUrl = basePath + 'index.html' + window.location.search + window.location.hash;
+      // Redirect to the new URL
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    If you are not redirected automatically, follow this <a href="/personal-website-with-ai-collab/">link to the home page</a>.
+  </body>
+</html>
