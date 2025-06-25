@@ -27,10 +27,16 @@ jobs:
           node-version:  'v22.16.0'  # Specify the Node.js version you are using
 
       # Install dependencies
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Install dependencies
         run: npm install
       
       # Build the project using Vite
+      - name: Clean dist directory
+        run: rm -rf dist
+
       - name: Build the project
         run: npm run build  # Vite will generate the dist folder here
 
