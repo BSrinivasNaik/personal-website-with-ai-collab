@@ -11,8 +11,8 @@ const HeroSection = () => {
     "Proven in building and scaling 0→1 products across tech domains",
     "Hands-on with data, scripting, and rapid prototyping",
     "Collaborates effectively across teams; aligns diverse stakeholders", 
-    "Lifelong learner with a builder's mindset and clarity of thought",
-    "Empathetic and resourceful problem solver with a user-first approach"
+    "Empathetic and resourceful problem solver with a user-first approach",
+    "Lifelong learner with a builder's mindset and clarity of thought"
   ];
 
   useEffect(() => {
